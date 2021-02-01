@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './App.css';
+import Home from '../src/pages/Home/index';
+import Bootstrap from "./CSS/bootstrap";
 import reportWebVitals from './reportWebVitals';
+import NavBar from "./componentes/navBar";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Bootstrap/>
+      <NavBar />
+      <header className="App-header">
+          <Home />
+      </header>
   </React.StrictMode>,
   document.getElementById('root')
 );
